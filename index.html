@@ -1,0 +1,28 @@
+<!DOCTYPE htmt>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Number Guessing Game</title>
+       
+       <style>
+        body {font-family: Arial; text-align: center; margin-top: 50px; }
+        input {padding: 10px; width: 100px; }
+        button {padding: 10px 20px; }
+        #message {margin-top: 20px; font-size: 1.2em;}
+
+       </style> 
+    </head>
+    <body>
+
+        <h1>Guess the Number (1/100)</h1>
+        <p>Enter Your Guess:</p>
+        <input type="number" id="guess" min="1" max="100">
+        <button onclick="checkGuess()">Guess</button>
+        
+        <div id="message"></div>
+        <div id="attempts"></div>
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
