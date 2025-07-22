@@ -29,3 +29,14 @@ else {
 
 document.getElementById("guess").value = "";
 }
+
+function resetGame() {
+      secretNumber = Math.floor(Math.random() * 100) +1;
+      attempts = 0;
+
+      document.getElementById("guess").value = "";
+      document.getElementById("message").textContent = "";
+      document.getElementById("attempts").textContent = "";
+
+      console.log("Game has been reset. Enter New number:", secretNumber);
+   }
